@@ -9,7 +9,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
                 background-image: url("happymother'sday.jpeg");
             }
             button {
@@ -24,7 +23,7 @@
                 cursor: pointer;
                 border-radius: 20px;
                 box-sizing: border-box;
-                width : 150px;
+                width : 172px;
                 font-size: x-large;
             }
             #buttons-container {
@@ -59,11 +58,15 @@
       
         <button onclick="playAudio('hin-music')">माँ</button>
         <audio id ="hin-music"><source src ="meriMaa.mp3" type="audio/mp3"></audio>
+        <pre>
+
+<button onclick="stopAllAudio()"><i>Stop</i></button>
+        </pre>
         </body>
     </div>
       
         <div id="image-container">
-            <img src="amma_art.jpg" alt="Amma Image" width="80%" height="70%">
+            <img src="amma_art.jpg" alt="Amma Image" width="85%" height="80%">
         </div>
         <script>
             var currentAudio = null;
@@ -76,6 +79,11 @@
             var audio = document.getElementById(id);
             audio.play();
             currentAudio = audio;
+        }
+        function stopAllAudio() {
+            if (currentAudio) {
+                currentAudio.pause();
+            }
         }
             
         </script> 
