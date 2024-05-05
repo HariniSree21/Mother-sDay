@@ -1,20 +1,26 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amma</title>
         <style>
             body {
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
+                background-color: #252224;
+                font-family: Arial, sans-serif;
+                text-align: center;
                 align-items: center;
-                height: 100vh;
-                background-image: url("happymother'sday.jpeg");
             }
-            button {
-                background-color: #e93c73;
-                color: white;
+            h1 {
+                color: #eff4f7;
+                font-size: 2em;
+                margin-top: 20px;
+            }
+            h2 {
+                color: #f7f2f2;
+                font-size: 1.5em;
+                margin-top: 20px;
+            }
+            button{
+                background-color: #dfe3e4;
+                color: rgb(10, 9, 9);
                 padding: 15px 32px;
                 text-align: center;
                 text-decoration: none;
@@ -24,61 +30,15 @@
                 cursor: pointer;
                 border-radius: 20px;
                 box-sizing: border-box;
-                width : 150px;
-            }
-            #buttons-container {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin-left: 10px;
-
-
-            }
-            img {
-                border-radius: 10px;
-            }
-            #image-container {
-                margin-right: 10px;
-                margin-left: 30px;
+                width : 165px;
+                font-size: x-large;
             }
         </style>
     </head>
     <body>
-        <div id="buttons-container">
-        <button onclick="playAudio('tel-music')">అమ్మ</button>
-        <audio id ="tel-music"><source src ="Nee Padalaku Muvvala – Amma Song _ Kanam Ringtone - MobCup.Com.Co.mp3" type="audio/mp3"></audio>
-        
-        <button onclick="playAudio('tam-music')">ஆனாலும்</button>
-        <audio id ="tam-music"><source src ="Varisu-Amma-Song.mp3" type="audio/mp3"></audio>
-        
-        <button onclick="playAudio('kan-music')">ಅಮ್ಮ</button>
-        <audio id ="kan-music"><source src ="jeeva_kottavalu.mp3" type="audio/mp3"></audio>
-      
-        <button onclick="playAudio('mal-music')">അമ്മ</button>
-        <audio id ="mal-music"><source src ="ILoveYouMummy.mp3" type="audio/mp3"></audio>
-      
-        <button onclick="playAudio('hin-music')">माँ</button>
-        <audio id ="hin-music"><source src ="meriMaa.mp3" type="audio/mp3"></audio>
-        </body>
-    </div>
-      
-        <div id="image-container">
-            <img src="amma_art.jpg" alt="Amma Image" width="80%" height="70%">
-        </div>
-        <script>
-            var currentAudio = null;
-
-        function playAudio(id) {
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0; 
-            }
-            var audio = document.getElementById(id);
-            audio.play();
-            currentAudio = audio;
-        }
-            
-        </script> 
-
+        <h1>5 Indian songs dedicated to all beautiful mother's on this special day</h1>
+        <h2>If you are browsing on mobile, try tilting your mobile for the best experience.</h2>
+        <h2>If all set then click on the button below to continue</h2>   
+        <a href="home.html"><button>Continue</button></a> 
     </body>
 </html>
